@@ -1,0 +1,26 @@
+.gojs-textarea{
+  min-height: 500px !important;
+}
+
+.gojs-radio {
+  margin: 5px;
+  border: thin;
+}
+
+.gojs-error {
+  color: darkred;
+}
+
+.copyright-content {
+  padding: 10px;
+}
+
+.brand-logo {
+  margin-left: 10px;
+}
+
+#tlta {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
