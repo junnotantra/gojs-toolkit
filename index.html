@@ -41,53 +41,6 @@
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-    <div class="section no-pad-bot" id="index-banner">
-        <div id="app" v-cloak class="">
-            <div class="row">
-                <div class="col l12">
-                    <label class="gojs-radio">
-                        <input name="group1" type="radio" value="0" v-model="action" v-on:change="Process" />
-                        <span>Prettify</span>
-                    </label>
-                    <label class="gojs-radio">
-                        <input name="group1" type="radio" value="1" v-model="action" v-on:change="Process" />
-                        <span>Uglify</span>
-                    </label>
-                    <p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col l10">
-                    <span class="gojs-error">{{ err }}</span>
-                </div>
-                <div class="col l2 right-align hide-on-med-and-down">
-                    <a class="waves-effect waves-light btn" onclick="copyClipboard('output-text')"><i
-                            class="material-icons left">content_copy</i>Copy Output</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col l6 s12">
-                    <textarea id="raw-text" v-model="raw" v-on:keyup="Process" rows="20"
-                        class="gojs-textarea materialize-textarea" placeholder="Raw JSON"></textarea>
-                    <label for="raw-text">Raw JSON</label>
-                </div>
-                <div class="input-field col l6 s12">
-                    <textarea id="output-text" rows="20" class="gojs-textarea materialize-textarea" placeholder="Output"
-                        readonly>{{ formatted }}</textarea>
-                    <label for="output-text">Output</label>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="fixed-action-btn hide-on-large-only">
-        <a class="btn-floating btn-large waves-effect waves-light" onclick="copyClipboard('output-text')">
-            <i class="material-icons">content_copy</i>
-        </a>
-    </div>
-
-
     <footer class="page-footer orange">
         <div class="">
             <div class="row">
